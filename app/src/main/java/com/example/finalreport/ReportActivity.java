@@ -23,7 +23,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.io.File;
 import java.io.FileOutputStream;
 
-public class MainActivity extends AppCompatActivity {
+public class ReportActivity extends AppCompatActivity {
 
     private Spinner reportTypeSpinner;
     private Button exportButton;
@@ -79,7 +79,7 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void onCancelled(@NonNull DatabaseError error) {
-                Toast.makeText(MainActivity.this, "Error fetching data: " + error.getMessage(), Toast.LENGTH_SHORT).show();
+                Toast.makeText(ReportActivity.this, "Error fetching data: " + error.getMessage(), Toast.LENGTH_SHORT).show();
             }
         });
     }
